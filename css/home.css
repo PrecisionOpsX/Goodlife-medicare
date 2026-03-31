@@ -1159,6 +1159,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
+    align-items: start;
 }
 
 .contact-location-card {
@@ -1168,6 +1169,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    height: auto;
 }
 
 .contact-location-name {
@@ -1219,6 +1221,7 @@
     color: #333;
     line-height: 1.5;
     margin: 14px 20px 16px;
+    min-height: 3.2em;
 }
 
 .contact-location-actions {
@@ -1226,6 +1229,7 @@
     flex-wrap: wrap;
     gap: 10px;
     padding: 0 20px 16px;
+    margin-top: auto;
 }
 
 .contact-btn {
@@ -1354,6 +1358,10 @@
     .contact-location-actions {
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .contact-location-address {
+        min-height: 0;
     }
 
     .contact-clinic-hours {

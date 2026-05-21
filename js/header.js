@@ -106,4 +106,34 @@
     }
     window.addEventListener('scroll', updateHeaderScrollShadow, { passive: true });
     updateHeaderScrollShadow();
+
+    // Services mega-menu tabs (desktop only — mobile uses original nested menu)
+    document.querySelectorAll('.nav-item-dropdown--services').forEach((servicesDropdown) => {
+        const tabs = servicesDropdown.querySelectorAll('[data-services-tab]');
+        const panels = servicesDropdown.querySelectorAll('[data-services-panel]');
+        if (!tabs.length || !panels.length) return;
+
+        function activateServicesTab(tabId) {
+            tabs.forEach((tab) => {
+                const isActive = tab.dataset.servicesTab === tabId;
+                tab.classList.toggle('is-active', isActive);
+                tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            panels.forEach((panel) => {
+                const isActive = panel.dataset.servicesPanel === tabId;
+                panel.classList.toggle('is-active', isActive);
+                panel.hidden = !isActive;
+            });
+        }
+
+        tabs.forEach((tab) => {
+            tab.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) return;
+                e.preventDefault();
+                e.stopPropagation();
+                activateServicesTab(tab.dataset.servicesTab);
+            });
+        });
+    });
 })();

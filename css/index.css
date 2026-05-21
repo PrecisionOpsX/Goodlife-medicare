@@ -261,6 +261,232 @@ body {
     color: #286241;
 }
 
+/* Services mega-menu (desktop) */
+@media (min-width: 769px) {
+    .nav-item-dropdown--services {
+        position: static;
+    }
+
+    .nav-item-dropdown--services .services-dropdown-menu--mobile {
+        display: none !important;
+    }
+
+    .nav-item-dropdown--services .services-mega-menu {
+        left: 50%;
+        right: auto;
+        min-width: min(1240px, calc(100vw - 32px));
+        width: min(1240px, calc(100vw - 32px));
+        margin-top: 0;
+        padding: 0;
+        transform: translateX(-50%) translateY(-10px);
+        border-radius: 0 0 10px 10px;
+        border: 1px solid #1a1a1a;
+        overflow: hidden;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+    }
+
+    .nav-item-dropdown--services:hover .services-mega-menu,
+    .nav-item-dropdown--services:focus-within .services-mega-menu {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    .services-mega-menu__tabs {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .services-mega-menu__tab {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 20px 16px;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        font-family: noto-sans-bold, sans-serif;
+        line-height: 1.35;
+    }
+
+    .services-mega-menu__tab:last-child {
+        border-right: none;
+    }
+
+    .services-mega-menu__tab--core {
+        background: #fff;
+        color: #1a1a1a;
+    }
+
+    .services-mega-menu__tab--evaluations {
+        background: #f5f0d8;
+        color: #1a1a1a;
+    }
+
+    .services-mega-menu__tab--conservative {
+        background: #c8e6c9;
+        color: #1a1a1a;
+    }
+
+    .services-mega-menu__tab--interventional {
+        background: #359f49;
+        color: #fff;
+    }
+
+    .services-mega-menu__tab--orthopedic {
+        background: #286241;
+        color: #fff;
+    }
+
+    .services-mega-menu__tab.is-active {
+        box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .services-mega-menu__panels {
+        min-height: 0;
+    }
+
+    .services-mega-menu__panel {
+        display: none;
+        padding: 36px 40px 40px;
+        min-height: 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .services-mega-menu__panel.is-active {
+        display: block;
+    }
+
+    .services-mega-menu__cards {
+        display: grid;
+        gap: 20px;
+        max-width: 1120px;
+        margin: 0 auto;
+        align-items: stretch;
+    }
+
+    .services-mega-menu__cards--4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .services-mega-menu__cards--3 {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 920px;
+    }
+
+    .services-mega-menu__card {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        background: #e8e8e8;
+        border-radius: 12px;
+        padding: 14px;
+        text-decoration: none;
+        color: #1a1a1a;
+        box-sizing: border-box;
+        height: 100%;
+        transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+
+    .services-mega-menu__card:hover {
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+        transform: translateY(-2px);
+    }
+
+    .services-mega-menu__card-img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+        display: block;
+    }
+
+    .services-mega-menu__card-title {
+        font-size: 17px;
+        font-weight: 700;
+        font-family: noto-sans-bold, sans-serif;
+        text-align: center;
+        line-height: 1.35;
+        margin: 0;
+    }
+
+    .services-mega-menu__panel[data-services-panel="conservative"],
+    .services-mega-menu__panel[data-services-panel="interventional"],
+    .services-mega-menu__panel[data-services-panel="orthopedic"] {
+        min-height: 260px;
+        display: none;
+        align-content: center;
+    }
+
+    .services-mega-menu__panel[data-services-panel="conservative"].is-active,
+    .services-mega-menu__panel[data-services-panel="interventional"].is-active,
+    .services-mega-menu__panel[data-services-panel="orthopedic"].is-active {
+        display: block;
+    }
+
+    .services-mega-menu__panel[data-theme="core"] {
+        background: #fff;
+        color: #1a1a1a;
+    }
+
+    .services-mega-menu__panel[data-theme="evaluations"] {
+        background: #f5f0d8;
+        color: #1a1a1a;
+    }
+
+    .services-mega-menu__panel[data-theme="conservative"] {
+        background: #c8e6c9;
+        color: #1a1a1a;
+    }
+
+    .services-mega-menu__panel[data-theme="interventional"] {
+        background: #359f49;
+        color: #fff;
+    }
+
+    .services-mega-menu__panel[data-theme="orthopedic"] {
+        background: #286241;
+        color: #fff;
+    }
+
+    .services-mega-menu__col a:hover {
+        text-decoration: underline;
+    }
+
+    .services-mega-menu__columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px 100px;
+        max-width: 980px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .services-mega-menu__panel[data-services-panel="conservative"] .services-mega-menu__columns {
+        max-width: 900px;
+        gap: 20px 120px;
+    }
+
+    .services-mega-menu__col {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .services-mega-menu__col li + li {
+        margin-top: 18px;
+    }
+
+    .services-mega-menu__col a {
+        color: inherit;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+        font-family: noto-sans, sans-serif;
+    }
+}
+
 /* Action buttons */
 .action-group {
     display: flex;
@@ -515,6 +741,10 @@ body {
 
     .dropdown-submenu li a {
         padding: 10px 24px 10px 56px;
+    }
+
+    .nav-item-dropdown--services .services-mega-menu {
+        display: none !important;
     }
 
     .header-action-icon-btn {

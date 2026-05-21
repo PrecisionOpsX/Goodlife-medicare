@@ -53,9 +53,107 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item-dropdown">
+                <li class="nav-item-dropdown nav-item-dropdown--services">
           <a href="./services.html" class="nav-link-item nav-link-with-arrow">Services</a>
-          <ul class="dropdown-menu">
+          <div class="dropdown-menu services-mega-menu" role="navigation" aria-label="Services menu">
+            <div class="services-mega-menu__inner">
+              <div class="services-mega-menu__tabs" role="tablist">
+                <button type="button" class="services-mega-menu__tab services-mega-menu__tab--core is-active" role="tab" aria-selected="true" data-services-tab="core">Core Services</button>
+                <button type="button" class="services-mega-menu__tab services-mega-menu__tab--evaluations" role="tab" aria-selected="false" data-services-tab="evaluations">Evaluations</button>
+                <button type="button" class="services-mega-menu__tab services-mega-menu__tab--conservative" role="tab" aria-selected="false" data-services-tab="conservative">Conservative Care</button>
+                <button type="button" class="services-mega-menu__tab services-mega-menu__tab--interventional" role="tab" aria-selected="false" data-services-tab="interventional">Interventional Care</button>
+                <button type="button" class="services-mega-menu__tab services-mega-menu__tab--orthopedic" role="tab" aria-selected="false" data-services-tab="orthopedic">Orthopedic Care</button>
+              </div>
+              <div class="services-mega-menu__panels">
+                <div class="services-mega-menu__panel is-active" data-services-panel="core" data-theme="core" role="tabpanel">
+                  <div class="services-mega-menu__cards services-mega-menu__cards--4">
+                    <a href="./services.html" class="services-mega-menu__card">
+                      <img src="./assets/images/services/physical-therapy.jpeg" alt="Pain Mitigation" class="services-mega-menu__card-img" width="280" height="160" />
+                      <span class="services-mega-menu__card-title">Pain Mitigation</span>
+                    </a>
+                    <a href="./services/chiropractic.html" class="services-mega-menu__card">
+                      <img src="./assets/images/services/chiropractic.jpg" alt="Chiropractic" class="services-mega-menu__card-img" width="280" height="160" />
+                      <span class="services-mega-menu__card-title">Chiropractic</span>
+                    </a>
+                    <a href="./services/physical-therapy.html" class="services-mega-menu__card">
+                      <img src="./assets/images/services/physical-therapy.jpeg" alt="Physical Therapy" class="services-mega-menu__card-img" width="280" height="160" />
+                      <span class="services-mega-menu__card-title">Physical Therapy</span>
+                    </a>
+                    <a href="./services/massage.html" class="services-mega-menu__card">
+                      <img src="./assets/images/services/massage.webp" alt="Massage Therapy" class="services-mega-menu__card-img" width="280" height="160" />
+                      <span class="services-mega-menu__card-title">Massage Therapy</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="services-mega-menu__panel" data-services-panel="evaluations" data-theme="evaluations" role="tabpanel" hidden>
+                  <div class="services-mega-menu__cards services-mega-menu__cards--3">
+                    <a href="./services/digital-x-rays.html" class="services-mega-menu__card">
+                      <img src="./assets/images/services/spinal-x-ray.jpg" alt="Digital X-Rays" class="services-mega-menu__card-img" width="320" height="160" />
+                      <span class="services-mega-menu__card-title">Digital X-Rays</span>
+                    </a>
+                    <a href="./services/ultrasound.html" class="services-mega-menu__card">
+                      <img src="./assets/images/services/ultrasound.jpg" alt="Ultrasound" class="services-mega-menu__card-img" width="320" height="160" />
+                      <span class="services-mega-menu__card-title">Ultrasound</span>
+                    </a>
+                    <a href="./services/comprehensive-exam.html" class="services-mega-menu__card">
+                      <img src="./assets/images/services/medical-exam.jpg" alt="Comprehensive Care" class="services-mega-menu__card-img" width="320" height="160" />
+                      <span class="services-mega-menu__card-title">Comprehensive Care</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="services-mega-menu__panel" data-services-panel="conservative" data-theme="conservative" role="tabpanel" hidden>
+                  <div class="services-mega-menu__columns">
+                    <ul class="services-mega-menu__col">
+                      <li><a href="./services.html">Pain Mitigation</a></li>
+                      <li><a href="./services/chiropractic.html">Chiropractic</a></li>
+                      <li><a href="./services/physical-therapy.html">Physical Therapy</a></li>
+                      <li><a href="./services/massage.html">Massage Therapy</a></li>
+                      <li><a href="./services/k-laser.html">K-Laser</a></li>
+                      <li><a href="./services/trigger-point-injections.html">Trigger Point</a></li>
+                    </ul>
+                    <ul class="services-mega-menu__col">
+                      <li><a href="./services/spinal-decompression.html">DRX Spinal Decompression</a></li>
+                      <li><a href="./services/b12-shots.html">B-12 Shot</a></li>
+                      <li><a href="./services/weight-loss.html">Medical Weight Loss</a></li>
+                      <li><a href="./services/varicose-veins.html">Varicose Veins</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="services-mega-menu__panel" data-services-panel="interventional" data-theme="interventional" role="tabpanel" hidden>
+                  <div class="services-mega-menu__columns">
+                    <ul class="services-mega-menu__col">
+                      <li><a href="./services/transforminal-epidural.html">Transforaminal epidural Injections</a></li>
+                      <li><a href="./services/facet-joint-injections.html">Facet Joint Injections</a></li>
+                      <li><a href="./services/joint-injections.html">Joint Injections</a></li>
+                      <li><a href="./services/botox-for-migraines.html">Botox for Migraines</a></li>
+                      <li><a href="./services/viscosupplementation.html">Viscosupplementation</a></li>
+                    </ul>
+                    <ul class="services-mega-menu__col">
+                      <li><a href="./services/spinal-cord.html">Spinal Cord Stimulation</a></li>
+                      <li><a href="./services/mua.html">Manipulation Under Anesthesia</a></li>
+                      <li><a href="./services/selective-nerve.html">Radiofrequency</a></li>
+                      <li><a href="./services/varicose-veins.html">Varicose Veins</a></li>
+                      <li><a href="./services/radiofrequency-ablation.html">Radiofrequency Ablation</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="services-mega-menu__panel" data-services-panel="orthopedic" data-theme="orthopedic" role="tabpanel" hidden>
+                  <div class="services-mega-menu__columns">
+                    <ul class="services-mega-menu__col">
+                      <li><a href="./services/hip-replacement.html">Hip replacement</a></li>
+                      <li><a href="./services/knee-replacement.html">Knee replacement</a></li>
+                      <li><a href="./services/shoulder-repair.html">Shoulder repair</a></li>
+                    </ul>
+                    <ul class="services-mega-menu__col">
+                      <li><a href="./services/dekompressor.html">Decompressor Discetomy</a></li>
+                      <li><a href="./services/discography.html">Discography</a></li>
+                    </ul>
+                  </div>
+                </div>
+</div>
+            </div>
+          </div>
+          <ul class="dropdown-menu services-dropdown-menu--mobile">
             <li class="dropdown-item-has-children">
               <a href="./services/chiropractic.html">General Chiropractic</a>
             </li>
@@ -82,8 +180,7 @@
                 </li>
                 <li><a href="./services/ultrasound.html">Ultrasound</a></li>
                 <li><a href="./services/comprehensive-exam.html">Comprehensive Exam</a></li>
-
-                </ul>
+              </ul>
             </li>
             <li class="dropdown-item-has-children header-dropdown-level-1">
               <a href="#">Conservative Care Treaments</a>
@@ -94,20 +191,19 @@
                 <li>
                   <a href="./services/physical-therapy.html">Physical therapy</a>
                 </li>
-
                 <li>
                   <a href="./services/k-laser.html">K-Laser (Class IV laser therapy)</a>
                 </li>
                 <li>
-                  <a href="./services/transforminal-epidural.html">Trigger point injections</a>
+                  <a href="./services/trigger-point-injections.html">Trigger point injections</a>
                 </li>
                 <li>
-                  <a href="./services/spinal-decompression.html">Spinal decompression therapy</a></li><!-- TEMP HIDDEN peptide nav: <li>  <a href="./services/peptide-injection.html">Peptide injections</a></li> -->
+                  <a href="./services/spinal-decompression.html">Spinal decompression therapy</a>
+                </li>
               </ul>
             </li>
             <li class="dropdown-item-has-children header-dropdown-level-2">
               <a href="#">Interventional Care Treatments</a>
-
               <ul class="dropdown-submenu">
                 <li>
                   <a href="./services/transforminal-epidural.html">Transforaminal epidural injections</a>
@@ -150,7 +246,6 @@
             </li>
             <li class="dropdown-item-has-children header-dropdown-level-3">
               <a href="#">Orthopedic Care Treatments</a>
-
               <ul class="dropdown-submenu">
                 <li>
                   <a href="./services/knee-replacement.html">Knee Replacement</a>
@@ -168,7 +263,7 @@
               </ul>
             </li>
           </ul>
-        </li>
+</li>
         <li class="nav-item-dropdown">
           <a href="#" class="nav-link-item nav-link-with-arrow">Locations</a>
           <ul class="dropdown-menu">

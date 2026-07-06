@@ -104,6 +104,87 @@
     margin: 0;
 }
 
+/* ----- Meet the Providers ----- */
+.providers-section {
+    background: #fff;
+    padding: 60px 24px;
+}
+
+.providers-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.providers-section h2 {
+    font-size: clamp(22px, 3vw, 32px);
+    color: #1b1b1b;
+    margin: 0 0 40px;
+    font-family: noto-sans-bold, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.providers-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 28px;
+}
+
+.provider-card {
+    grid-column: span 3;
+    background: #fff8e7;
+    border-radius: 12px;
+    padding: 28px 24px 32px;
+    text-align: center;
+}
+
+.provider-card:nth-child(n + 5) {
+    grid-column: span 2;
+}
+
+.provider-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 16px;
+    border: 2px solid #286241;
+}
+
+.provider-photo--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #286241;
+    color: #C1FF72;
+    font-family: noto-sans-bold, sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.02em;
+}
+
+.provider-name {
+    font-size: 18px;
+    color: #1b1b1b;
+    margin: 0 0 4px;
+    font-family: noto-sans-bold, sans-serif;
+}
+
+.provider-title {
+    font-size: 15px;
+    color: #333;
+    margin: 0 0 14px;
+}
+
+.provider-bio {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.55;
+    margin: 0;
+    text-align: left;
+}
+
 /* ----- How the Goodlife Started ----- */
 .how-started-section {
     padding: 0 24px;
@@ -252,9 +333,24 @@
 }
 
 /* Responsive */
+@media (max-width: 900px) {
+    .providers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .provider-card,
+    .provider-card:nth-child(n + 5) {
+        grid-column: span 1;
+    }
+}
+
 @media (max-width: 768px) {
     .owners-grid {
         grid-template-columns: 1fr;
+    }
+
+    .providers-section {
+        padding: 48px 16px;
     }
 
     .owner-card {

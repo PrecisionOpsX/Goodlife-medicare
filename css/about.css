@@ -135,22 +135,33 @@
     grid-column: span 3;
     background: #fff8e7;
     border-radius: 12px;
-    padding: 28px 24px 32px;
-    text-align: center;
+    padding: 20px 22px 24px;
 }
 
 .provider-card:nth-child(n + 5) {
     grid-column: span 2;
 }
 
+.provider-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+
 .provider-photo {
-    width: 120px;
-    height: 120px;
+    flex-shrink: 0;
+    width: 96px;
+    height: 96px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
-    margin: 0 auto 16px;
     border: 2px solid #286241;
+}
+
+.provider-card:nth-child(n + 5) .provider-photo {
+    width: 80px;
+    height: 80px;
 }
 
 .provider-photo--placeholder {
@@ -160,21 +171,36 @@
     background: #286241;
     color: #C1FF72;
     font-family: noto-sans-bold, sans-serif;
-    font-size: 28px;
+    font-size: 24px;
     letter-spacing: 0.02em;
 }
 
+.provider-info {
+    flex: 1;
+    min-width: 0;
+}
+
 .provider-name {
-    font-size: 18px;
+    font-size: 17px;
     color: #1b1b1b;
     margin: 0 0 4px;
     font-family: noto-sans-bold, sans-serif;
+    line-height: 1.25;
+}
+
+.provider-card:nth-child(n + 5) .provider-name {
+    font-size: 15px;
 }
 
 .provider-title {
-    font-size: 15px;
+    font-size: 14px;
     color: #333;
-    margin: 0 0 14px;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.provider-card:nth-child(n + 5) .provider-title {
+    font-size: 13px;
 }
 
 .provider-bio {
@@ -341,6 +367,19 @@
     .provider-card,
     .provider-card:nth-child(n + 5) {
         grid-column: span 1;
+    }
+
+    .provider-card:nth-child(n + 5) .provider-photo {
+        width: 96px;
+        height: 96px;
+    }
+
+    .provider-card:nth-child(n + 5) .provider-name {
+        font-size: 17px;
+    }
+
+    .provider-card:nth-child(n + 5) .provider-title {
+        font-size: 14px;
     }
 }
 

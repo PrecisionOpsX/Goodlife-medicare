@@ -322,42 +322,32 @@
                     </a>
                 </div>
 
-                <!-- TEMP HIDDEN blog sidebar: uncomment to restore Recent Posts, Subscribe, and Consultation widgets
-                <aside class="blog-sidebar" aria-label="Blog sidebar">
-                    <div class="blog-sidebar-block">
-                        <h3 class="blog-sidebar-title">RECENT POSTS</h3>
-                        <ul class="blog-recent-posts-list">
-                            <li><a href="./blog-detail.html">Understanding Chronic Pain - FEB 10, 2026</a></li>
-                            <li><a href="./blog-detail.html">Chiropractic vs. Physical Therapy - FEB 15, 2026</a></li>
-                            <li><a href="./blog-detail.html">What to Expect at Your First Visit - FEB 20, 2026</a></li>
+                <aside class="blog-listing-sidebar" aria-label="Blog sidebar">
+                    <div class="blog-listing-sidebar-block">
+                        <h3 class="blog-listing-sidebar-title">SUBSCRIBE TO OUR BLOG</h3>
+                        <p class="blog-listing-sidebar-desc">For weekly tips, articles, &amp; promos:</p>
+                        <form class="blog-listing-subscribe-form" id="blog-subscribe-form"
+                            aria-label="Subscribe to blog" method="POST"
+                            action="https://script.google.com/macros/s/AKfycbyFbXHG9rn8VfWbxLZWqlentpgO4SIb4fANbTzsh9Xp5vWO9jJciXWX4abEdruU1llq/exec"
+                            target="newsletter-submit-frame">
+                            <input type="text" name="Name" class="blog-listing-input" placeholder="NAME"
+                                autocomplete="name">
+                            <input type="email" name="Email" class="blog-listing-input" placeholder="EMAIL*" required
+                                autocomplete="email">
+                            <button type="submit" class="blog-listing-subscribe-btn"
+                                id="blog-subscribe-btn">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="blog-listing-sidebar-block">
+                        <h3 class="blog-listing-sidebar-title">CATEGORIES</h3>
+                        <ul class="blog-listing-categories">
+                            <li><a href="#">Pain Management</a></li>
+                            <li><a href="#">Chiropractic</a></li>
+                            <li><a href="#">Physical Therapy</a></li>
+                            <li><a href="#">Healthy Living</a></li>
                         </ul>
                     </div>
-                    <div class="blog-sidebar-block">
-                        <h3 class="blog-sidebar-title">SUBSCRIBE TO OUR BLOG</h3>
-                        <p class="blog-sidebar-subtitle">NEW ARTICLES POSTED WEEKLY</p>
-                        <form class="blog-subscribe-form" aria-label="Subscribe to blog">
-                            <input type="text" name="name" placeholder="NAME" class="blog-form-input">
-                            <input type="email" name="email" placeholder="EMAIL*" class="blog-form-input" required>
-                            <button type="submit" class="blog-form-submit">Subscribe</button>
-                        </form>
-                    </div>
-                    <div class="blog-sidebar-block">
-                        <h3 class="blog-sidebar-title">BOOK A FREE CONSULTATION</h3>
-                        <form class="blog-consultation-form" aria-label="Book a free consultation">
-                            <select name="location" class="blog-form-input" aria-label="Location">
-                                <option value="">LOCATION</option>
-                                <option value="redondo-beach">Redondo Beach</option>
-                                <option value="seal-beach">Seal Beach</option>
-                                <option value="torrance">Torrance</option>
-                                <option value="el-segundo">El Segundo</option>
-                            </select>
-                            <input type="text" name="name" placeholder="NAME" class="blog-form-input">
-                            <input type="email" name="email" placeholder="EMAIL*" class="blog-form-input" required>
-                            <button type="submit" class="blog-form-submit">Request Consultation</button>
-                        </form>
-                    </div>
                 </aside>
-                -->
             </div>
         </section>
 
